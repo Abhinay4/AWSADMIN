@@ -11,9 +11,9 @@
 4. Create 1 t2-micro machine in Business Subnent with out public ip
 5. Create 1 t2-micro/RDS mysql instance in Data Subnet without public ip
 6. Configure NACL such that  
-..* Business Tier Allows incoming only from Web not from Data
-..* Data Tier Allows incoming only from Business Not from Web
-..* Web Tier Allows incoming on port 80, 22 from any where
+Business Tier Allows incoming only from Web not from Data
+Data Tier Allows incoming only from Business Not from Web
+Web Tier Allows incoming on port 80, 22 from any where
 
 7. Create a new ebs volume in Web Subnet & Mount it to any folder
 8. Create an Efs mount on any folder in all the three ec2 machines
